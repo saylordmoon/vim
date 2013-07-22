@@ -1,4 +1,4 @@
-"=====================================
+"====================================="
 "color syntax 
 syntax enable
 colorscheme molokai
@@ -19,10 +19,10 @@ set nobackup
 execute pathogen#infect()
 filetype plugin indent on
 "============Keymaps =================
-" Comment lines with /+/
-"map // <leader>c<space>"
-"vmap // <leader>cc"
-"Cotation marks 
+"Comment lines with /+/ Nerd commenter Plugin
+nmap // <leader>c<space>
+vmap // <leader>cc
+"Cotation marks Surround Plugin 
 nmap " ysiw"
 nmap ' ysiw'
 vmap ' S'
