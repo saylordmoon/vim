@@ -11,7 +11,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set nowrap
-set paste
+"set paste"
 "=====Pathogen to install plugins=====
 execute pathogen#infect()
 filetype plugin indent on
@@ -20,7 +20,7 @@ filetype plugin indent on
 "map // <leader>c<space>"
 "vmap // <leader>cc"
 "Cotation marks 
-nmap " ysiw"
-nmap ' ysiw'
-vmap ' S'
-vmap " S"
+"nmap " ysiw""
+"nmap ' ysiw'"
+"vmap ' S'"
+"vmap " S""
