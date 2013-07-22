@@ -11,6 +11,14 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set nowrap
+"Selection Color
+highlight Visual ctermbg=57
+"Search Options
+set showmatch
+set incsearch
+set hlsearch 
+set ignorecase
+set smartcase
 "Remove VIM swap files 
 set noswapfile
 set nobackup
