@@ -2,6 +2,7 @@
 "color syntax 
 syntax enable
 colorscheme molokai
+set guifont=monaco:h14
 "Line numbers
 set number
 set cursorline
