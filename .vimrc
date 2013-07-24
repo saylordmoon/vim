@@ -33,10 +33,9 @@ set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs"
 "============Keymaps =================
-"comment lines with /+/ Nerd commenter Plugin
-imap <D-/> <esc> <leader>c<space> 
-nmap <D-/> <leader>c<space>
-vmap <D-/> <leader>cc
+"Comment lines with /+/ Nerd commenter Plugin
+nmap // <leader>c<space>
+vmap // <leader>cc
 "Cotation marks Surround Plugin 
 nmap " ysiw"
 nmap ' ysiw'
