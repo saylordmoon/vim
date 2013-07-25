@@ -102,3 +102,6 @@ hi vimHiGroup					guifg=Orchid3
 hi vimGroup						guifg=LightPink3
 hi vimCommand					guifg=#0048ff
 hi vimFTOption					guifg=Orchid3
+hi vimVar						guifg=black
+hi vimNotation					guifg=SteelBlue
+hi vimMapRhs					guifg=SteelBlue
