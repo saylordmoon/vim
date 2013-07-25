@@ -1,8 +1,9 @@
 "====================================="
 "color syntax 
 syntax enable
-colorscheme molokai
-set guifont=monaco:h14
+"set backgroud=light
+colorscheme blueshift "molokai
+set guifont=menlo:h14
 "Line numbers
 set number
 set cursorline
@@ -29,9 +30,9 @@ execute pathogen#infect()
 filetype plugin indent on
 "Powerline plugin requirements========
 let g:Powerline_symbols = 'fancy'
-set nocompatible   " Disable vi-compatibility
-set laststatus=2   " Always show the statusline
-set encoding=utf-8 " Necessary to show Unicode glyphs"
+set nocompatible   			" Disable vi-compatibility
+set laststatus	=	2   	" Always show the statusline
+set encoding	=	utf-8 	" Necessary to show Unicode glyphs"
 "============Keymaps =================
 "Comment lines with /+/ Nerd commenter Plugin
 nmap // <leader>c<space>
@@ -41,3 +42,13 @@ nmap " ysiw"
 nmap ' ysiw'
 vmap ' S'
 vmap " S"
+"Create a color scheme syntax 
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
