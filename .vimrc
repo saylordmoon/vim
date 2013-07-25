@@ -24,6 +24,7 @@ set smartcase
 "Remove VIM swap files 
 set noswapfile
 set nobackup
+set showcmd
 "set paste"
 "=====Pathogen to install plugins=====
 execute pathogen#infect()
@@ -37,11 +38,20 @@ set encoding=utf-8 	" Necessary to show Unicode glyphs"
 "Comment lines with /+/ Nerd commenter Plugin
 nmap // <leader>c<space>
 vmap // <leader>cc
-"Cotation marks Surround Plugin 
+"=====Cotation marks Surround Plugin==== 
 nmap " ysiw"
 nmap ' ysiw'
 vmap ' S'
 vmap " S"
+"======Open tabs =======================
+let mapleader = ","
+map <leader>nt :tabnew<cr>
+map <leader>ct :tabclose<cr>
+map <leader>mt :tabmove
+map <leader><right> :tabnext<cr>
+map <leader><left> :tabprevious<cr>
+"========Tag List map ===================
+nnoremap <silent> <F8> :TlistToggle<CR>  
 "Create a color scheme syntax 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
