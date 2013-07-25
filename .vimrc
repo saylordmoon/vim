@@ -2,13 +2,14 @@
 "color syntax 
 syntax enable
 "set backgroud=light
-colorscheme blueshift "molokai
+colorscheme ir_black "desert blueshift molokai
 set guifont=menlo:h14
 "Line numbers
 set number
 set cursorline
 "Indent options
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
@@ -35,6 +36,9 @@ set nocompatible   			" Disable vi-compatibility
 set laststatus=2   	" Always show the statusline
 set encoding=utf-8 	" Necessary to show Unicode glyphs"
 "============Keymaps =================
+"swap paste keys 
+noremap p P
+noremap P p
 "Comment lines with /+/ Nerd commenter Plugin
 nmap // <leader>c<space>
 vmap // <leader>cc
@@ -44,10 +48,10 @@ nmap ' ysiw'
 vmap ' S'
 vmap " S"
 "======Open tabs =======================
-let mapleader = ","
-map <leader>nt :tabnew<cr>
-map <leader>ct :tabclose<cr>
-map <leader>mt :tabmove
+"let mapleader = ","
+"map <leader>tn :tabnew<cr>
+"map <leader>ct :tabclose<cr>
+"map <leader>mt :tabmove
 map <leader><right> :tabnext<cr>
 map <leader><left> :tabprevious<cr>
 "========Tag List map ===================

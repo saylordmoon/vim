@@ -34,10 +34,10 @@ endif
 hi Title        guifg=#202020   gui=none
 hi Underlined   guifg=#202020   gui=underline
 
-hi Normal       guifg=black     guibg=white
+hi Normal       guifg=black     guibg=#eaeaea
 hi ModeMsg      guifg=black     guibg=white
 hi Cursor       guifg=#f0f0f0   guibg=#101010
-hi LineNr       guifg=#ffffff   guibg=#c0d0e0
+hi LineNr       guifg=#ffffff   guibg=#646464
 hi Visual       guifg=white     guibg=#5381bc
 hi WildMenu     guifg=black     guibg=#ffbc29
 hi IncSearch    guibg=black     guifg=#ffbc29
